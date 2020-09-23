@@ -11,7 +11,12 @@
   <arg name="output_diagnostics_topic" default="diagnostics" doc="Diagnostic topic" />
 
   <include file="$(find ndt_localizer)/launch/static_tf.launch" />
-  <include file="$(find ndt_localizer)/launch/map_loader.launch" />
+
+<!-- 加载2d_3d地图 -->
+  <include file="$(find ndt_localizer)/launch/map_2d_3d_loader.launch" />
+
+
+
   <include file="$(find ndt_localizer)/launch/points_downsample.launch" />
 
   <!-- tf -->
@@ -40,12 +45,10 @@
   </node>
 
   <!-- <include file="$(find ndt_localizer)/launch/lexus.launch" /> -->
-  <include file="$(find hunter_description)/launch/load_nav_model.launch" />
+  <!-- <include file="$(find hunter_description)/launch/load_nav_model.launch" /> -->
 
 
-   <!-- Run the map server -->
-  <arg name="map_file" default="$(find lego_loam)/map/giim6th.yaml"/>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
 
  
 
