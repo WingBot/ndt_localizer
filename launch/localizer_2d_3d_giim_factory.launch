@@ -13,8 +13,12 @@
   <include file="$(find ndt_localizer)/launch/static_tf.launch" />
 
 <!-- 加载2d_3d地图 -->
-  <include file="$(find ndt_localizer)/launch/map_2d_3d_loader.launch" />
 
+     <!-- Run the map server -->
+ 
+  <include file="$(find ndt_localizer)/launch/map_2d_3d_loader.launch" />
+  <arg name="map_file" default="$(find lego_loam)/map/giim_factory_0924.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
 
   <include file="$(find ndt_localizer)/launch/points_downsample.launch" />

@@ -40,7 +40,7 @@
     </node>
 
      <!-- Run the map server -->
-  <arg name="map_file" default="$(find lego_loam)/map/giim6th.yaml"/>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  <!-- <arg name="map_file" default="$(find lego_loam)/map/giim6th.yaml"/> -->
+  <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" /> -->
 
 </launch>
