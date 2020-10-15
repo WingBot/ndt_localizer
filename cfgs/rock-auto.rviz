@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: map
   - Class: jsk_rviz_plugin/YesNoButton
     Name: YesNoButton
 Preferences:
@@ -58,49 +58,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_footprint:
-          Value: true
-        base_link:
-          Value: true
-        front_left_steer_link:
-          Value: true
-        front_left_wheel_link:
-          Value: true
-        front_right_steer_link:
-          Value: true
-        front_right_wheel_link:
-          Value: true
-        imu_link:
-          Value: true
-        inertial_link:
-          Value: true
-        map:
-          Value: true
-        rear_left_wheel_link:
-          Value: true
-        rear_right_wheel_link:
-          Value: true
-        rslidar:
-          Value: true
-        world:
-          Value: true
       Marker Scale: 5
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        world:
-          map:
-            base_link:
-              base_footprint:
-                {}
-              imu_link:
-                {}
-              inertial_link:
-                {}
-              rslidar:
-                {}
+        {}
       Update Interval: 0
       Value: true
     - Buffer length: 100
@@ -273,7 +237,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: world
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -297,7 +261,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 85.10136413574219
+      Distance: 919.4223022460938
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -312,10 +276,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.3947964906692505
+      Pitch: 1.1597965955734253
       Target Frame: world
       Value: Orbit (rviz)
-      Yaw: 0.09999643266201019
+      Yaw: 0.7599962949752808
     Saved: ~
 Window Geometry:
   Displays:

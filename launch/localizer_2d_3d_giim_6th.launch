@@ -17,7 +17,7 @@
      <!-- Run the map server -->
  
   <include file="$(find ndt_localizer)/launch/map_2d_3d_loader.launch" />
-  <arg name="map_file" default="$(find lego_loam)/map/giim6th.yaml"/>
+  <arg name="map_file" default="$(find lego_loam)/map/giim_6th.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
 
